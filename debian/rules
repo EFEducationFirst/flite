@@ -16,7 +16,7 @@ override_dh_auto_test:
 	echo "Disable the tests target since flite doesn't have one"
 
 override_dh_auto_configure:
-	dh_auto_configure -- --enable-shared
+	dh_auto_configure -- --enable-shared --with-audio=none
 
 
 
