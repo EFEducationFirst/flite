@@ -12,6 +12,9 @@ export DH_VERBOSE=1
 %:
 	dh $@  --with autotools-dev
 
+override_dh_auto_clean:
+	echo "Why would a package ever have the make target 'distclean' call ./configure?"
+
 override_dh_auto_test:
 	echo "Disable the tests target since flite doesn't have one"
 
