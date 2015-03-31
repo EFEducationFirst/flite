@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: flite
+Description: a text to speech library
+Requires:
+Version: @VERSION@
+Libs: -L${libdir} -lflite
+Libs.private: -lm
+Cflags: -I${includedir}
