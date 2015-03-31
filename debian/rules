@@ -13,4 +13,10 @@ export DH_VERBOSE=1
 	dh $@  --with autotools-dev
 
 override_dh_auto_test:
-	echo "Skipping the auto test target since there isn't a test target"
+	echo "Disable the tests target since flite doesn't have one"
+
+override_dh_auto_configure:
+	dh_auto_configure -- --enable-shared
+
+
+
