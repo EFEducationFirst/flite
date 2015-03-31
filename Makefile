@@ -105,7 +105,7 @@ install:
 	mkdir -p $(DESTDIR)$(INSTALLLIBDIR)
 	mkdir -p $(DESTDIR)$(INSTALLINCDIR)
 	$(INSTALL) -m 644 include/*.h $(DESTDIR)$(INSTALLINCDIR)
-	@$(INSTALL) -m 755 flite.pc $(DESTDIR)$(INSTALLINCDIR)/pkgconfig
+	@ $(INSTALL) -m 755 flite.pc $(DESTDIR)$(INSTALLINCDIR)/pkgconfig
 	@ $(MAKE) -C main --no-print-directory DESTDIR=$(DESTDIR) install
 
 time-stamp :
