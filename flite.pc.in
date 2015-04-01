@@ -6,7 +6,7 @@ includedir=@includedir@
 Name: flite
 Description: a text to speech library
 Requires:
-Version: @VERSION@
+Version: 2.0.0
 Libs: -L${libdir} -lflite
 Libs.private: -lm
 Cflags: -I${includedir}/flite/
