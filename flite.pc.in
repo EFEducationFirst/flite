@@ -9,4 +9,4 @@ Requires:
 Version: @VERSION@
 Libs: -L${libdir} -lflite
 Libs.private: -lm
-Cflags: -I${includedir}
+Cflags: -I${includedir}/flite/
