@@ -76,7 +76,7 @@ rm -rf %{buildroot}
 # there is no texi2html for RHEL 4
 %doc ACKNOWLEDGEMENTS README COPYING README-ALSA.txt
 %else
-%doc ACKNOWLEDGEMENTS README COPYING doc/html README-ALSA.txt
+%doc ACKNOWLEDGEMENTS README COPYING doc/html
 %endif
 %{_libdir}/*.so.*
 %{_bindir}/*
@@ -110,7 +110,7 @@ rm -rf %{buildroot}
 * Fri Jan 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3-17
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
 
-* Mon Mar 13 2011 Francois Aucamp <faucamp@fedoraproject.org> - 1.3-16
+* Mon Mar 14 2011 Francois Aucamp <faucamp@fedoraproject.org> - 1.3-16
 - Added patch declaring explicit libm linking dependency (RHBZ #564899)
 - Updated source and URL tags
 
@@ -157,7 +157,7 @@ rm -rf %{buildroot}
 * Fri Oct 20 2006 Francois Aucamp <faucamp@csir.co.za> - 1.3-5
 - Modified "build" so that "_smp_flags" is only used for i386 arch
 
-* Mon Oct 10 2006 Francois Aucamp <faucamp@csir.co.za> - 1.3-4
+* Tue Oct 10 2006 Francois Aucamp <faucamp@csir.co.za> - 1.3-4
 - Removed "_smp_flags" macro from "build" for x86_64 arch
 
 * Tue Sep 26 2006 Francois Aucamp <faucamp@csir.co.za> - 1.3-3
