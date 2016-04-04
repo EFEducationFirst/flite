@@ -42,7 +42,7 @@ Development files for Flite, a small, fast speech synthesis engine.
 
 %build
 autoconf
-%configure --enable-shared --with-audio=alsa
+%configure --enable-shared --with-audio=none
 # This package fails parallel make (thus cannot be built using "_smp_flags")
 make
 # Build documentation
