@@ -1,6 +1,6 @@
 Name:           flite
 Version:        2.0.0
-Release:        0%{?dist}
+Release:        1%{?dist}
 Summary:        Small, fast speech synthesis engine (text-to-speech)
 
 Group:          Applications/Multimedia
