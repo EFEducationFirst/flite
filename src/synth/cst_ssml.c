@@ -54,7 +54,7 @@
 /*                                                                       */
 /*  <...> ignore all others                                              */
 /*                                                                       */
-/*  Voice call backs (e.g. -pw and -ps) are not transfered when new      */
+/*  Voice call backs (e.g. -pw and -ps) are not transferred when new     */
 /*  voices are selected                                                  */
 /*                                                                       */
 /*************************************************************************/
@@ -196,7 +196,7 @@ static cst_utterance *ssml_apply_tag(const char *tag,
     {
         if (cst_streq("start",feat_string(attributes,"_type")))
         {
-            /* Note SSML doesn't do stretch it does reciprical of stretch */
+            /* Note SSML doesn't do stretch it does reciprocal of stretch */
             if (cst_streq("rate",get_param_string(attributes,"_name0","")))
                 feat_set_float(word_feats,"local_duration_stretch",
                                1.0/feat_float(attributes,"_val0"));

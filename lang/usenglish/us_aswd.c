@@ -34,7 +34,7 @@
 /*               Date:  December 2001                                    */
 /*************************************************************************/
 /*                                                                       */
-/*  Check is symbol is a pronouncable word or not                        */
+/*  Check is symbol is a pronounceable word or not                       */
 /*                                                                       */
 /*  Uses FSMs for start to Vowel and end back to vowel                   */
 /*                                                                       */
@@ -1554,7 +1554,7 @@ static int is_word_suf(const char *word)
 
 int us_aswd(const char *word)
 {
-    /* returns 1 if this words looks like its pronouncable, 0 otherwise */
+    /* returns 1 if this words looks like it's pronounceable, 0 otherwise */
     char *dc;
     int i;
 

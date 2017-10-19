@@ -114,7 +114,7 @@ const char * const unicode_sampa_mapping[16674][5] =
    {"u0668p", "(EIGHT)", NULL, NULL, NULL},
    {"u0669p", "(NINE)", NULL, NULL, NULL},
    {"u066Ap", "(PERCENT SIGN)", NULL, NULL, NULL},
-   {"u066Bp", "(DECIMMAL SEPARATOR)", NULL, NULL, NULL},
+   {"u066Bp", "(DECIMAL SEPARATOR)", NULL, NULL, NULL},
    {"u066Cp", "(THOUSAND SEPARATOR)", NULL, NULL, NULL},
    {"u066Dp", "(ASTERISK)", NULL, NULL, NULL},
    {"u066Ep", "b", "A", NULL, NULL},

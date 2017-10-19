@@ -10,7 +10,7 @@
  *
  *	Copyright (c) 1992, 1995 by Markus Mummert
  *
- *	Redistribution and use of this software, modifcation and inclusion
+ *	Redistribution and use of this software, modification and inclusion
  *	into other forms of software are permitted provided that the following
  *	conditions are met:
  *
@@ -74,7 +74,7 @@
  *	  where:
  *	    n,i		running integers
  *	    out(t)	output signal sampled at t=n*Tout
- *	    in(t)	input signal sampled in intervalls Tin
+ *	    in(t)	input signal sampled in intervals Tin
  *	    u,d		up- and downsampling factor, integers
  *	    g(t)	interpolating function
  *	    L		FIR-length of realized g(t), integer
@@ -87,7 +87,7 @@
  *			a causal design with a delay of ((L-1)/2)*Tin.
  *	    n%u		is a cyclic modulo-u counter clocked by out-rate
  *	    [n/u]*d	is a d-increment counter, advanced when n%u resets
- *	    B(i,n)*Tin	can take on L*u differnt values, at which g(t)
+ *	    B(i,n)*Tin	can take on L*u different values, at which g(t)
  *			has to be sampled as a coefficient array
  *
  *	Interpolation function design:
@@ -98,7 +98,7 @@
  *	    pushing the outer skirts of the resulting impulse response below
  *	    a certain threshold fast enough. The drawback is a smoothed
  *	    cutoff inducing some aliasing. Due to the symmetry of g(t) the
- *	    group delay of the filtering process is contant (linear phase).
+ *	    group delay of the filtering process is constant (linear phase).
  *
  *	    g(t) = 2*fgK*sinc(pi*2*fgK*t) * exp(-pi*(2*fgG*t)**2)
  *
@@ -108,9 +108,9 @@
  *			reflecting the 6.82dB-down point
  *
  * 	  note:	    
- *	    Taking fsin=1/Tin as the input sampling frequncy, it turns out
+ *	    Taking fsin=1/Tin as the input sampling frequency, it turns out
  *	    that in conjunction with L, u and d only the ratios fgK/(fsin/2)
- *	    and fgG/(fsin/2) specify the whole proces. Requiring fsin, fgK
+ *	    and fgG/(fsin/2) specify the whole process. Requiring fsin, fgK
  *	    and fgG as input purposely keeps the notion of absolute
  *	    frequencies.
  *

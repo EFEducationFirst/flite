@@ -149,7 +149,7 @@ typedef struct {
 #define CST_SND_UCHAR 2
 #define CST_SND_SHORT 3
 
-/* Convertion functions */
+/* Conversion functions */
 unsigned char cst_short_to_ulaw(short sample);
 short cst_ulaw_to_short(unsigned char ulawbyte);
 

@@ -43,7 +43,7 @@
  * charge.
  *
  * SUN SOURCE CODE IS PROVIDED AS IS WITH NO WARRANTIES OF ANY KIND INCLUDING
- * THE WARRANTIES OF DESIGN, MERCHANTIBILITY AND FITNESS FOR A PARTICULAR
+ * THE WARRANTIES OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR
  * PURPOSE, OR ARISING FROM A COURSE OF DEALING, USAGE OR TRADE PRACTICE.
  *
  * Sun source code is provided with no support and without any obligation on
@@ -85,7 +85,7 @@
  * used by the G.721/G.723 encoder and decoder to preserve their internal
  * state between successive calls.  The meanings of the majority
  * of the state structure fields are explained in detail in the
- * CCITT Recommendation G.721.  The field names are essentially indentical
+ * CCITT Recommendation G.721.  The field names are essentially identical
  * to variable names in the bit level description of the coding algorithm
  * included in this Recommendation.
  */

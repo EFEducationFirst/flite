@@ -148,10 +148,10 @@ Return number as three digit octal"
 We dump the entries and pronunciation in simple strings to ofdsd which
 is used for compression later, and also dump the entries to ofddrc
 with their index to ofdi in the format they will be used in.  For
-compressions sake we dump the prunciations in reverse (sharing the
+compressions sake we dump the pronunciations in reverse (sharing the
 null terminator with the previous entry and the entry itself forward.
 The index points at the start of the entry (so you have to go backwards to
-get the prunciation."
+get the pronunciation."
   (let ((phone_table (list "_epsilon_" ))
 	(entry)
 	(entry_count 0)

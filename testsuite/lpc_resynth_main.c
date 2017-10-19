@@ -103,7 +103,7 @@ int main(int argc, char **argv)
                  "-order <int> LPC order {16}\n"
                  "-str mixed excitation strengths\n"
                  "-me_filters <string> mixed excitation filters\n"
-                 "-rfc Coefficents are reflection coefficients\n",
+                 "-rfc Coefficients are reflection coefficients\n",
                  args);
 
     f1 = val_string(val_car(files));

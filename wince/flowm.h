@@ -34,7 +34,7 @@
 #ifndef __FLOWM_H_
 #define __FLOWM_H_
 
-/* Following the program structure in Boling's Promgramming in WinCE */
+/* Following the program structure in Boling's Programming in WinCE */
 typedef LRESULT (*MsgDispatcher)(HWND hwnd,UINT msg,WPARAM wParam,LPARAM lParam);
 typedef struct MsgDispatch_struct
 {                            
@@ -49,7 +49,7 @@ typedef struct CMDDispatch_struct
     CMDDispatcher Fxn;
 } CMDDispatch;
 
-/* Some globals that serve to communcate between threads */
+/* Some globals that serve to communicate between threads */
 extern int flowm_play_status;
 extern TCHAR fl_filename[257];
 extern int flowm_file_pos;
