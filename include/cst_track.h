@@ -55,7 +55,7 @@ typedef struct  cst_track_struct {
     float **frames;
 } cst_track;
 
-cst_track *new_track();
+cst_track *new_track(void);
 void delete_track(cst_track *val);
 
 float track_frame_shift(cst_track *t, int frame);

@@ -779,7 +779,7 @@ STATIC int regrepeat(cst_regstate *state, char *p);
 
 #ifdef DEBUG
 #define regnarrate stdout
-void regdump();
+void regdump(cst_regex *);
 STATIC char *regprop(char *scan);
 #endif
 

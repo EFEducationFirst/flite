@@ -71,7 +71,7 @@ typedef struct lexicon_struct {
 
 } cst_lexicon;
 
-cst_lexicon *new_lexicon();
+cst_lexicon *new_lexicon(void);
 void delete_lexicon(cst_lexicon *lex);
 
 cst_val *cst_lex_make_entry(const cst_lexicon *lex, 

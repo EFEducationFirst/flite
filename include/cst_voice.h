@@ -65,12 +65,12 @@ typedef struct cst_voice_struct cst_voice;
 struct cst_lang_struct {
     const char *lang;
     void (*lang_init)(cst_voice *vox);
-    cst_lexicon *(*lex_init)();
+    cst_lexicon *(*lex_init)(void);
 };
 typedef struct cst_lang_struct cst_lang;
 
 /* Constructor functions */
-cst_voice *new_voice();
+cst_voice *new_voice(void);
 void delete_voice(cst_voice *u);
 
 CST_VAL_USER_TYPE_DCLS(voice,cst_voice)

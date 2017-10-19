@@ -55,7 +55,7 @@ struct cst_utterance_struct {
 };
 
 /* Constructor functions */
-cst_utterance *new_utterance();
+cst_utterance *new_utterance(void);
 void delete_utterance(cst_utterance *u);
 
 cst_relation *utt_relation(const cst_utterance *u,const char *name);

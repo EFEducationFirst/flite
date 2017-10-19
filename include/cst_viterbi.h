@@ -51,7 +51,7 @@ typedef struct cst_vit_cand_struct {
     cst_item *item;
     struct cst_vit_cand_struct *next;
 } cst_vit_cand;
-cst_vit_cand *new_vit_cand();
+cst_vit_cand *new_vit_cand(void);
 void vit_cand_set(cst_vit_cand *vc, cst_val *val);
 void vit_cand_set_int(cst_vit_cand *vc, int ival);
 void delete_vit_cand(cst_vit_cand *vc);
@@ -64,7 +64,7 @@ typedef struct cst_vit_path_struct {
     struct cst_vit_path_struct *from;
     struct cst_vit_path_struct *next;
 } cst_vit_path;
-cst_vit_path *new_vit_path();
+cst_vit_path *new_vit_path(void);
 void delete_vit_path(cst_vit_path *vp);
 
 typedef struct cst_vit_point_struct {
@@ -76,7 +76,7 @@ typedef struct cst_vit_point_struct {
     cst_vit_path **state_paths;
     struct cst_vit_point_struct *next;
 } cst_vit_point;
-cst_vit_point *new_vit_point();
+cst_vit_point *new_vit_point(void);
 void delete_vit_point(cst_vit_point *vp);
 
 struct cst_viterbi_struct;

@@ -115,13 +115,13 @@ struct cst_lpcres_struct {
 };
 typedef struct cst_lpcres_struct cst_lpcres;
 
-cst_lpcres *new_lpcres();
+cst_lpcres *new_lpcres(void);
 void delete_lpcres(cst_lpcres *l);
 float lpcres_frame_shift(cst_lpcres *t, int frame);
 void lpcres_resize_frames(cst_lpcres *l,int num_frames);
 void lpcres_resize_samples(cst_lpcres *l,int num_samples);
 
-cst_sts_list *new_sts_list();
+cst_sts_list *new_sts_list(void);
 void delete_sts_list(cst_sts_list *l);
 
 const unsigned short * get_sts_frame(const cst_sts_list *sts_list, int frame);

@@ -69,7 +69,7 @@ extern cst_val *flite_voice_list;
 extern cst_lang flite_lang_list[20];
 
 /* Public functions */
-int flite_init();
+int flite_init(void);
 
 /* General top level functions */
 cst_voice *flite_voice_select(const char *name);
@@ -133,7 +133,7 @@ cst_item* flite_path_to_item(const cst_item *item,const char *featpath);
 int flite_add_voice(cst_voice *voice);
 int flite_add_lang(const char *langname,
                    void (*lang_init)(cst_voice *vox),
-                   cst_lexicon *(*lex_init)());
+                   cst_lexicon *(*lex_init)(void));
 /* These are init functions for generic grapheme based voices */
 void utf8_grapheme_lang_init(cst_voice *v);
 cst_lexicon *utf8_grapheme_lex_init(void);
