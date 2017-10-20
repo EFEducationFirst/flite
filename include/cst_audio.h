@@ -110,7 +110,7 @@ typedef struct cst_audio_streaming_info_struct
                               /* But this is *not* updated automatically */
     void *userdata;
 } cst_audio_streaming_info;
-cst_audio_streaming_info *new_audio_streaming_info();
+cst_audio_streaming_info *new_audio_streaming_info(void);
 void delete_audio_streaming_info(cst_audio_streaming_info *asi);
 CST_VAL_USER_TYPE_DCLS(audio_streaming_info,cst_audio_streaming_info)
 typedef int (*cst_audio_stream_callback)(const cst_wave *w,int start,int size, 

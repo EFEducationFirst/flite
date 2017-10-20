@@ -101,7 +101,7 @@ int flite_add_voice(cst_voice *voice)
 
 int flite_add_lang(const char *langname,
                    void (*lang_init)(cst_voice *vox),
-                   cst_lexicon *(*lex_init)())
+                   cst_lexicon *(*lex_init)(void))
 {
     if (flite_lang_list_length < 19)
     {

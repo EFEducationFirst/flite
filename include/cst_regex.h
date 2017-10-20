@@ -137,7 +137,7 @@ void hs_regdelete(cst_regex *);
 size_t cst_regsub(const cst_regstate *r, const char *in, char *out, size_t max);
 
 /* Initialize the regex engine and global regex constants */
-void cst_regex_init();
+void cst_regex_init(void);
 
 /* Regexps used in text processing (these are latin-alphabet specific
    and to some extent US English-specific) */

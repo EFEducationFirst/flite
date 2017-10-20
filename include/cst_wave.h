@@ -64,7 +64,7 @@ typedef struct  cst_wave_header_struct {
     int num_channels;
 } cst_wave_header;
 
-cst_wave *new_wave();
+cst_wave *new_wave(void);
 cst_wave *copy_wave(const cst_wave *w);
 void delete_wave(cst_wave *val);
 cst_wave *concat_wave(cst_wave *dest, const cst_wave *src);

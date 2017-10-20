@@ -46,7 +46,7 @@ typedef struct cst_ss_struct {
     double sumx;
 } cst_ss;
 
-cst_ss *new_ss();
+cst_ss *new_ss(void);
 void delete_ss(cst_ss *ss);
 void ss_reset(cst_ss *ss);
 double ss_mean(cst_ss *ss);
