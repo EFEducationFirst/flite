@@ -48,7 +48,7 @@ typedef struct lexicon_struct {
     int num_entries;
     /* Entries are centered around bytes with value 255 */
     /* entries and forward (compressed) pronunciations and backwards */
-    /* each are terminated (preceeded in pron case) by 0 */
+    /* each are terminated (preceded in pron case) by 0 */
     /* This saves 4 bytes per entry for an index */
     unsigned char *data; /* the entries and phone strings */
     int num_bytes;       /* the number of bytes in the data */

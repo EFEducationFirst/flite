@@ -47,7 +47,7 @@ o Although the synthesized output is not exactly the same as the same
   just faster, smaller and scalable.
 o For standard diphone voices, maximum run time memory
   requirements are approximately less than twice the memory requirement 
-  for the waveform generated.  For 32bit archtectures
+  for the waveform generated.  For 32bit architectures
   this effectively means under 1M.
 o The flite program supports, synthesis of individual strings or files
   (utterance by utterance) to direct audio devices or to waveform files.
@@ -104,7 +104,7 @@ on a Linux machine for StrongARM.  However note that new byte order
 architectures may not work directly as there is some careful
 byte order constraints in some structures.  These are portable but may
 require reordering of some fields, contact us if you are moving to
-a new archiecture.
+a new architecture.
 
 News
 ----
@@ -112,10 +112,10 @@ News
 New in 2.0.0 (Dec 2014)
     o Indic language support (Hindi, Tamil and Telugu)
     o SSML support
-    o CG voices as files accessilble by file:/// and http://
+    o CG voices as files accessible by file:/// and http://
       (and set of 13 voices to load)
     o random forest (multimodel support) improves voice quality
-    o Supports diffrent sample rates/mgc order to tune for speed
+    o Supports different sample rates/mgc order to tune for speed
     o Kal diphone 500K smaller
     o Fixed lots of API issues
     o thread safe (again) after initialization
@@ -184,7 +184,7 @@ tries to guess these but it might be able for cross compilation cases
 Interesting options there are
 
 -DWORDS_BIGENDIAN=1  for bigendian machines (e.g. Sparc, M68x)
--DNO_UNION_INITIALIZATION=1  For compilers without C 99 union inintialization
+-DNO_UNION_INITIALIZATION=1  For compilers without C 99 union initialization
 -DCST_AUDIO_NONE     if you don't need/want audio support
 
 There are different sets of voices and languages you can select between
@@ -230,7 +230,7 @@ of the speed.
 
    ./bin/flite doc/alice alice.wav
 
-will synthesize the whole of alice into a single file (previoous
+will synthesize the whole of alice into a single file (previous
 versions would only give the last utterance in the file, but
 that is fixed now).
 
@@ -284,10 +284,10 @@ are disappointed that it doesn't sound wonderful, sure its fast and
 small but what you really hoped for was the dulcit tones of a deep
 baritone voice that would make you desperately hang on every phrase it
 mellifluously produces.  But instead you get an 8Khz diphone voice that
-sounds like it came from the last millenium.
+sounds like it came from the last millennium.
 
 Well, first, you are right, it is an 8KHz diphone voice from the last
-millenium, and that was actually deliberate.  As we developed flite we
+millennium, and that was actually deliberate.  As we developed flite we
 wanted a voice that was stable and that we could directly compare with
 that very same voice in Festival.  Flite is an *engine*.  We want to
 be able take voices built with the FestVox process and compile them
@@ -301,7 +301,7 @@ have now set up a voice repository on
    http://festvox.org/flite/voices/LANG/*.flitevox
 If you visit there with a browser you can hear the examples.  You can
 also download the .flitevox files to you machine so you don't need a
-network connect everytime you need to load a voice.
+network connect every time you need to load a voice.
 
 We are now actively adding to this list of available voices in English
 and other languages.

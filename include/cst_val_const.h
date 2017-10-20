@@ -76,9 +76,9 @@
 /*  isn't going to work.  Casting will cause the float to be changed to  */
 /*  an int by CPP which isn't what you want, what you want is that the   */
 /*  four byte region gets filled with the four bytes that represent the  */
-/*  float itself.  Now you could get the four byte represention of the   */
+/*  float itself.  Now you could get the four byte representation of the */
 /*  float and pretend that is an int (0xbfff9a4 for 4.2 on intel), that  */
-/*  would work but that doesn't seem satifying and I'd need to have a    */
+/*  would work but that doesn't seem satisfying and I'd need to have a   */
 /*  preprocessor that could convert that.  You could make atoms always   */
 /*  have a pointer to another piece of memory, but that would take up    */
 /*  another 4 bytes not just for these constants but all other cst_vals  */
@@ -318,8 +318,8 @@ extern const cst_val_void val_string_24;
 #define DEF_STATIC_CONST_VAL_CONS(N,A,D) static DEF_CONST_VAL_CONS(N,A,D)
 
 /* Some actual val consts */
-/* The have casts as in the non-union intialize case the casts are necessary */
-/* but in the union initial case these casts are harmless                    */
+/* The have casts as in the non-union initialize case the casts are          */
+/* necessary but in the union initial case these casts are harmless          */
 
 #define VAL_INT_0 (cst_val *)&val_int_0
 #define VAL_INT_1 (cst_val *)&val_int_1

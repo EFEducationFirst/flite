@@ -2,11 +2,11 @@
 The initial development of flite was primarily done by awb while
 travelling, perhaps the name is doubly appropriate as a substantial
 amount of the coding was done over 30,000ft).  During most of that
-time awb was funded by the Language Technonologies Institute at
+time awb was funded by the Language Technologies Institute at
 Carnegie Mellon University.
 
 Kevin A. Lenzo was involved in the design, conversion techniques and
-representions for the voice distributed with flite (as well as being
+representations for the voice distributed with flite (as well as being
 the actual kal voice itself).
 
 Other contributions are:
@@ -28,11 +28,11 @@ Carnegie Mellon University
 Nagoya Institute of Technology
    The mlsa code derives from HTS (following a long chain)
 Tomoki Toda
-   The mlsa and mlpg support came view Tomoki's support for voice convertion
+   The mlsa and mlpg support came view Tomoki's support for voice conversion
    in FestVox which in turn (some of which) comes from NITECH's HTS.
 Marcela Charfuelan (DFKI)
    For the mixed-excitation techniques.  These originally came from NITECH
-   but we understood the technqiues from Marcela's Open Mary Java code and
+   but we understood the techniques from Marcela's Open Mary Java code and
    implemented them in our optimized version of MLSA.
 David Huggins-Daines (dhd@cepstral.com) 
    much of the clunits code, porting to multiple platforms, substantial

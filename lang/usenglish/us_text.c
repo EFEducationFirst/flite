@@ -464,7 +464,7 @@ static cst_val *us_tokentowords_one(cst_item *token, const char *name)
     else if (cst_regex_match(romannums,name))
     {   /* Roman numerals */
 	if (cst_streq("",ffeature_string(token,"p.punc")))
-	{   /* no preceeding punc */
+	{   /* no preceding punc */
 	    char n[10];
 	    cst_sprintf(n,"%d",en_exp_roman(name));
 	    if (rex_like(token))
@@ -812,7 +812,7 @@ static cst_val *us_tokentowords_one(cst_item *token, const char *name)
         /* Still not quiet right, if there is a user_lex we need to check */
         /* it too -- but user_lex isn't user setable yet */
 	/* Need common exception list */
-	/* unpronouncable list of alphas */
+	/* unpronounceable list of alphas */
 	r = en_exp_letters(name);
 
     /* buckets of other stuff missing */
@@ -893,12 +893,12 @@ static const char * const states[99][5] =
   { "MI", "", "michigan" , NULL, NULL },
   { "Mi", "ambiguous", "michigan" , NULL, NULL },
   { "Mich", "ambiguous", "michigan" , NULL, NULL },
-  { "MN", "ambiguous", "minnestota" , NULL, NULL },
-  { "Minn", "ambiguous", "minnestota" , NULL, NULL },
+  { "MN", "ambiguous", "minnesota" , NULL, NULL },
+  { "Minn", "ambiguous", "minnesota" , NULL, NULL },
   { "MS", "ambiguous", "mississippi" , NULL, NULL },
   { "Miss", "ambiguous", "mississippi" , NULL, NULL },
-  { "MT", "ambiguous", "montanna" , NULL, NULL },
-  { "Mt", "ambiguous", "montanna" , NULL, NULL },
+  { "MT", "ambiguous", "montana" , NULL, NULL },
+  { "Mt", "ambiguous", "montana" , NULL, NULL },
   { "MO", "ambiguous", "missouri" , NULL, NULL },
   { "Mo", "ambiguous", "missouri" , NULL, NULL },
   { "NC", "ambiguous", "north" , "carolina", NULL },
@@ -920,11 +920,11 @@ static const char * const states[99][5] =
   { "Pa", "ambiguous", "pennsylvania" , NULL, NULL },
   { "Penn", "ambiguous", "pennsylvania" , NULL, NULL },
   { "RI", "ambiguous", "rhode" , "island", NULL },
-  { "SC", "ambiguous", "south" , "carlolina", NULL },
+  { "SC", "ambiguous", "south" , "carolina", NULL },
   { "SD", "ambiguous", "south" , "dakota", NULL },
-  { "TN", "ambiguous", "tennesee" , NULL, NULL },
-  { "Tn", "ambiguous", "tennesee" , NULL, NULL },
-  { "Tenn", "ambiguous", "tennesee" , NULL, NULL },
+  { "TN", "ambiguous", "tennessee" , NULL, NULL },
+  { "Tn", "ambiguous", "tennessee" , NULL, NULL },
+  { "Tenn", "ambiguous", "tennessee" , NULL, NULL },
   { "TX", "ambiguous", "texas" , NULL, NULL },
   { "Tx", "ambiguous", "texas" , NULL, NULL },
   { "Tex", "ambiguous", "texas" , NULL, NULL },

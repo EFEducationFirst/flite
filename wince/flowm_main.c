@@ -266,7 +266,7 @@ BOOL CALLBACK PlayDlgProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
         SHInitDialog (&idi);
 
         for (i=0; flowm_voice_name(i); i++)
-        {   /* Add regestered voices to the voice dropdown */
+        {   /* Add registered voices to the voice dropdown */
             SendDlgItemMessage(hwnd, FL_VOXLIST, CB_ADDSTRING, 
                                0, (LPARAM)flowm_voice_name(i));
         }

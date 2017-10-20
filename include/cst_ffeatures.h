@@ -33,7 +33,7 @@
 /*             Author:  Alan W Black (awb@cs.cmu.edu)                    */
 /*               Date:  November 2007                                    */
 /*************************************************************************/
-/*  Language independant feature functions                               */
+/*  Language independent feature functions                               */
 /*************************************************************************/
 
 #ifndef _CST_FFEATURES_H

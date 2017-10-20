@@ -86,7 +86,7 @@ int feat_present(const cst_features *f,const char *name);
 int feat_length(const cst_features *f);
 
 /* Feature names are expected to be literals -- its *much* faster to do */
-/* look ups and less alloc/frees are necesssary.  Almosts always this is */
+/* look ups and less alloc/frees are necessary.  Almosts always this is */
 /* fine, but when you are making up new fnames, you can get a copy of the */
 /* string that will be deleted when the cst_features is deleted */
 const char *feat_own_string(cst_features *f,const char *name);

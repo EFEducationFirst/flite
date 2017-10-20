@@ -34,7 +34,7 @@
 /*               Date:  October 2000                                     */
 /*************************************************************************/
 /*                                                                       */
-/*  Convertion routines for various waveform encodings                   */
+/*  Conversion routines for various waveform encodings                   */
 /*                                                                       */
 /*  This contains software written external to Flite                     */
 /*       ulaw code came via the Edinburgh Speech Tools                   */

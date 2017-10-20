@@ -69,7 +69,7 @@ typedef struct cst_clunit_db_struct {
     /* These may be set up at runtime (in file-mapped databases) */
     cst_sts_list *sts, *mcep;
 
-    /* These are pre-scaled by 65536 to accomodate fixed-point machines */
+    /* These are pre-scaled by 65536 to accommodate fixed-point machines */
     const int *join_weights;
 
     /* Misc. important parameters */

@@ -81,7 +81,7 @@ void delete_vit_point(cst_vit_point *vp);
 
 struct cst_viterbi_struct;
 
-/* Functions for user call back, to find candiates at a point, and
+/* Functions for user call back, to find candidates at a point, and
    to join (and score) paths */
 typedef cst_vit_cand *(cst_vit_cand_f_t)(cst_item *s,
 					  struct cst_viterbi_struct *vd);

@@ -158,7 +158,7 @@ void viterbi_initialise(cst_viterbi *vd,cst_relation *r)
     cst_vit_point *n = 0;
 
     /* Construct the timeline with points for each item in relation */
-    /* initiallising the state tables at each point                 */
+    /* initialising the state tables at each point                  */
     for (i=relation_head(r); TRUE ; i=item_next(i))
     {
 	n = new_vit_point();
@@ -352,7 +352,7 @@ static cst_vit_path *find_best_path(cst_viterbi *vd)
 static int betterthan(cst_viterbi *v,int a, int b)
 {
     /* better may be most big or most small */
-    /* for probabalities big is good */
+    /* for probabilities big is good */
     
     if (v->big_is_good)
 	return (a > b);
